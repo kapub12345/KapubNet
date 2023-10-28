@@ -42,7 +42,7 @@ const net = require("net");
      threads: ~~process.argv[5],
      proxyFile: process.argv[6]
  }
- const cplist = [ // Captcha Solve by Ibaaall 10-04-2023
+ const cplist = [ // Captcha Solve by Kapub 10-04-2023
      "RC4-SHA:RC4:ECDHE-RSA-AES256-SHA:AES256-SHA:HIGH:!MD5:!aNULL:!EDH:!AESGCM",
      "ECDHE-RSA-AES256-SHA:RC4-SHA:RC4:HIGH:!MD5:!aNULL:!EDH:!AESGCM",
      "ECDHE-RSA-AES256-SHA:AES256-SHA:HIGH:!AESGCM:!CAMELLIA:!3DES:!EDH"
@@ -61,7 +61,7 @@ const net = require("net");
      constructor(){}
  
   HTTP(options, callback) {
-     const parsedAddr = options.address.split(":"); // Socket Connection Fixed by Ibaaall 27-03-2023
+     const parsedAddr = options.address.split(":"); // Socket Connection Fixed by Kapub 27-03-2023
      const addrHost = parsedAddr[0];
      const payload = "CONNECT " + options.address + ":443 HTTP/1.1\r\nHost: " + options.address + ":443\r\nConnection: Keep-Alive\r\n\r\n";
      const buffer = new Buffer.from(payload);
@@ -78,7 +78,7 @@ const net = require("net");
          connection.write(buffer);
      });
  
-     connection.on("data", chunk => { //HTTP Version Fixed by Ibaaall 08-04-2023
+     connection.on("data", chunk => { //HTTP Version Fixed by Kapub 08-04-2023
          const response = chunk.toString("utf-8");
          const isAlive = response.includes("HTTP/1.1 200");
          if (isAlive === false) {
