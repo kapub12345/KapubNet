@@ -3,4 +3,4 @@ KAPUBNET DDOS TOOL RELEASED:
 -fast attack
 -captcha solver
 By Kapub
-with some help of SqLost
+with some help of SqLost for the menu
