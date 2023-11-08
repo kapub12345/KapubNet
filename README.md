@@ -38,3 +38,6 @@ Tool is owned by **Kapub** and under his Copyrights.
 - Python Programming & Readme : [SQLOST](https://github.com/SqLoSt/)
 
 Kapub did most of the work and it was his idea to create this fresh & fast tool.
+
+### Tips
+Use 8 threads instead of something big
