@@ -14,17 +14,10 @@ def bannerprint():
     
 def getrequestcount():
     print("\033[96m[?] Choose the requests that are going to be sent per second! (Don't choose too high else it might be less effective)")
-    print("\033[91m[1] 10K requests per sec\n[2] 20K requests per sec\n[3] 30K requests per sec\n[4] 40K requests per sec\n[5] 50K requests per sec\n[6] 60K requests per sec\033[94m (might be unstable due to high request frequency)\n\033[91m[7] 100K requests per sec\033[94m (might be unstable due to high request frequency)")
 
-    valid_choices = ['1', '2', '3', '4', '5', '6', '7']
+    chc = input(f"\033[38;5;208m>> ")
 
-    choice = input(f"\033[38;5;208m>> ")
-
-    while choice not in valid_choices:
-        print("\033[91mInvalid choice. Please choose a number from 1 to 7.")
-        choice = input(f"\033[38;5;208m>> ")
-
-    request = int(choice) * 10000
+    request = int(chc) * 10000
 
     return request
 
